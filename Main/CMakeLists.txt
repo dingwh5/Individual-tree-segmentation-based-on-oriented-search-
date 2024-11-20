@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(Bishe)
+set(PCL_DIR "C:\\Program Files\\PCL 1.11.1\\cmake\\PCLConfig.cmake")
+find_package(PCL 1.11 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+add_executable(Bishe Bishe.cpp)
+target_link_libraries(Bishe ${PCL_LIBRARIES})
+
+include_directories("C:/Program Files/OpenCV4.2/include")
+include_directories("C:/Program Files/OpenCV4.2/include/opencv2")
+target_link_libraries(Bishe "C:/Program Files/OpenCV4.2/x64/vc15/lib/opencv_world420d.lib")
