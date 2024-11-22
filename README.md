@@ -15,13 +15,25 @@ The code folder contains the following files:
 Key configurable parameters in the source code:  
 - Line 558: Set the input folder path for point cloud files (format: .pcd).  
 - Line 606: Define the search radius (Radius) for clustering operations.
+### **3. Benchmark Data Sources**
 
-### 3. Benchmark Data Source Statement  
-We have used two benchmark datasets in this project: **NEWFOR** (Eysn et al., 2015) and **FORinstance** (Puliti et al., 2023).  
+This project utilizes two publicly available benchmark datasets:
 
-**References**  
-- Puliti, S., Pearse, G., Surový, P., et al. (2023). For-instance: A UAV laser scanning benchmark dataset for semantic and instance segmentation of individual trees. *arXiv preprint arXiv:2309.01279*.  
-- Eysn, L., Hollaus, M., Lindberg, E., et al. (2015). A benchmark of LiDAR-based single tree detection methods using heterogeneous forest data from the alpine space. *Forests, 6*(5), 1721-1747.
+- **[NEWFOR Dataset](https://www.kaggle.com/datasets/sentinel3734/newfor-tree-detection-benchmark?resource=download)**  
+  Published by Eysn et al. (2015), this dataset provides LiDAR-based single tree detection benchmarks using heterogeneous forest data from the Alpine region.
+
+- **[FORinstance Dataset](https://zenodo.org/records/8287792)**  
+  Released by Puliti et al. (2023), this UAV laser scanning dataset is designed for semantic and instance segmentation of individual trees.
+
+
+ **References**  
+1. **Puliti, S., Pearse, G., Surový, P., et al. (2023).**  
+   *For-instance: A UAV laser scanning benchmark dataset for semantic and instance segmentation of individual trees.*  
+   arXiv preprint arXiv:2309.01279.  
+
+2. **Eysn, L., Hollaus, M., Lindberg, E., et al. (2015).**  
+   *A benchmark of LiDAR-based single tree detection methods using heterogeneous forest data from the Alpine space.*  
+   Forests, 6(5), 1721–1747.  
 
 ### 4. Generated Output Files  
 For each input point cloud, the program generates five output files, which are divided into two main stages:
